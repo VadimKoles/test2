@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+
+body{
+    background-color: #ffffff;
+    margin:0;
+    font-family: "Literata", serif;
+    font-size: 4vw;
+}
+
+
+
+
+
+
+
+@media (max-width: 340px) and (max-height: 700px) {
+    /*................HEADER...............*/
+
+    header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/Default_photo_screensaver_for_the_site_Picture_gallery_flowers_3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 1;
+    }
+
+    .darker{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.299);
+        background-attachment: fixed;
+        background-size: cover;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav{
+        background-color: rgba(255, 255, 255, 0.719);
+        height: 44%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 27%;
+        z-index: 1000;
+    }
+
+    .logo_full{
+        width: 66vw;
+
+        margin-top: 5px;
+    }
+
+    .logo_inscription{
+        display: none;
+        height: 40px;
+    }
+
+    .naver{
+        height: 14%;
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5px;
+    }
+
+    .parallelogram {
+        width: 27vw;
+        height: 100%;
+        -webkit-transform: skew(20deg);
+           -moz-transform: skew(20deg);
+             -o-transform: skew(20deg);
+        background: #E0E0E0;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 3px 3px rgba(0, 0,0, 0.15), 0px 3px 3px rgba(0, 0,0, 0.15), 0px 3px 3px rgba(0, 0,0, 0.15), 0px 2px 2px rgba(0, 0,0, 0.15);
+    }
+
+    .p_naver{
+        -webkit-transform: skew(160deg);
+        font-family: "Literata", serif;
+        text-align: center;
+        font-style: italic;
+        color: #000000;
+        font-size: 11px;
+        width: 100px;
+        height: 90%;
+        margin-left: -5px;
+    }
+
+    /*  Burger menu  */
+
+    .burger_menu_icon{
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 35px;
+        height: 21px;
+        transition: 1.3s;
+    }
+    .burger_menu{  
+        top: 50px;
+        background-color: rgba(255, 255, 255, 0.95);
+        height: 30vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        position: fixed;
+        transform: translateY(-350px);
+        transition: 1.5s;
+        z-index: 10;
+        border-bottom-right-radius: 100px;
+    }
+    .burger_a{
+        color: #000000;
+        text-decoration: none;
+        font-size: 4.5vw;
+        margin: 0;
+    }
+    .stick{
+        width: 35px;
+        height: 3px;
+        transition: 1s;
+    }
+    #st1{
+        background-color: #FF5213;
+    }
+    #st2{
+        background-color: #FF7340;
+    }
+    #st3{
+        background-color: #FF9A74;
+    }
+    
+
+    /*............MAIN............*/
+    
+    /*  Общие  */
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    a {text-decoration: none;}
+
+    h1{
+        font-family: "Literata", serif;
+        font-size: 7vw;
+        font-style: italic;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    h3{
+        font-size: 5.3vw;
+        font-weight: normal;
+        padding: 0;
+    }
+    h4{
+        font-size: 5.5vw;
+        font-style: italic;
+        font-weight: 300;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .line_big {
+        display: block;
+        width: 82%;
+        height: 0.5px;
+        background-color: black;
+
+    }
+
+    .line_small {
+        display: block;
+        width: 200px;
+        height: 0.5px;
+        background-color: black;
+        margin: -10px 0px 5px;
+        box-shadow: 0px 3px 3px rgba(0, 0,0, 0.15), 0px 3px 3px rgba(0, 0,0, 0.15), 0px 3px 3px rgba(0, 0,0, 0.15), 0px 2px 2px rgba(0, 0,0, 0.15);
+    }
+
+    .scrollToTop{
+        width: 36px;
+        height: 36px;
+        background-color: #ffcfbd00;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 1%;
+        right: 2%;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.0);
+        transition: background-color 2s;
+        transform: translateX(14vw);
+    }
+    .imgToTop{
+        width: 13px;
+        height: 13px;
+        transition: transform 1s;
+    }
+    /*   Profile   */
+    
+    .background_profile{
+        width: 100%;
+        height: 83vh;
+        background-color: #E0E0E0;
+        border-top-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .img_profile{
+        width: 68vw;
+        border-top-left-radius: 100px;
+        border: solid 3px #ffffff;
+    }
+
+
+    .button_description{
+        display: flex;
+        align-items: center;
+        width: 42vw;
+        background-color: #FFBBA2;
+        border: #ffffff 2px solid;
+        color: #ffffff;
+        font-size: 5vw;
+        font-style: italic;
+        font-weight: bold;
+        padding-left: 5px;
+        border-bottom-right-radius: 40px;
+    }
+
+    /*   Концепция   */
+
+    .emphasis{
+        color: #FFBBA2;
+        font-style: italic;
+        font-weight: 450;
+    }
+    
+    .narration{
+        width: 85vw;
+        margin-bottom: 20px;
+    }
+
+    .background_picture_narration{
+        width: 100%;
+        height: 45vh;
+        background-image: url(images/Default_photo_screensaver_for_the_site_Picture_gallery_flowers_3.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    /*   Философия бренда   */
+
+    .background_narration{
+        width: 100%;
+        height: 31vh;
+        margin-top: 30px;
+        background-color: #E0E0E0;
+        border-top-right-radius: 90px;
+        border-bottom-left-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .emphasis_darker{
+        color: #ff936b;
+        font-style: italic;
+        font-weight: 450;
+    }
+
+    /*...............FOOTER................*/
+
+    footer{
+        width: 100%;
+        height: 540px;
+        background-color: #E0E0E0;
+        border-top-right-radius: 100px;
+        margin-top: 50px;
+    }
+
+    .footer_logo{
+        width: 57vw;
+        margin-top: 20px;
+    }
+
+    .footer_p{
+        margin: 0px 0px 0px 7px;
+        display: flex;
+        align-items: center;
+    }
+    .img_contact_footer{
+        width: 18px;
+    }
+    .footer_string{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0px 0px 0px;
+    }
+    .indent_footer{
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
